@@ -8,6 +8,9 @@
     "test": "standard",
     "test-focus": "standard-focus"
   },
+  "bin": {
+    "remoted": "src/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codealchemist/remoted.git"
