@@ -1,6 +1,10 @@
-# remoted
+# remoted [![Build Status](https://travis-ci.org/codealchemist/remoted.svg?branch=master)](https://travis-ci.org/codealchemist/remoted)
 
 Remotely run commands on clients.
+
+[![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
+![screenshot](https://cldup.com/OIehl_lEwM.gif)
 
 ## Install
 
@@ -16,7 +20,7 @@ Guests are machines that will send commands to hosts.
 
 When a guest connects to a host a command line interface will be provided.
 
-These machines can found each other by using UDP messages with some help
+These machines can found each other by sending UDP messages with some help
 from [udp-node](https://github.com/codealchemist/udp-node).
 
 You can run normal shell commands on the host and get their output.
@@ -47,10 +51,21 @@ started first ;)
 On a host connected to a guest you can use any of the following
 commands:
 
-- `notify [message]`
-- `play [url]`
-- `stop`
-- `exit`
+- `notify [message]`: Sends OS notifications using 
+[https://github.com/mikaelbr/node-notifier](https://github.com/mikaelbr/node-notifier)
+- `play [url]`: Supports mp3 and YouTube URLs (yeah, YouTube URLs!)
+- `stop`: Stops audio playback.
+- `exit`: Kills host and guest.
+
+Some cool tests of the audio playback feature:
+
+Play a [changelog.com](https://changelog.com) podcast:
+
+`play https://cdn.changelog.com/uploads/podcast/253/the-changelog-253.mp3`
+
+Play a song from YouTube:
+
+`play https://youtu.be/wTP2RUD_cL0`
 
 ## OS Commands
 
