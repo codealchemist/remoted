@@ -1,0 +1,43 @@
+{
+  "name": "remoted",
+  "version": "1.0.0",
+  "description": "Remotely run commands on clients.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "standard",
+    "test-focus": "standard-focus"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codealchemist/remoted.git"
+  },
+  "keywords": [
+    "remote",
+    "commands",
+    "client",
+    "server",
+    "udp"
+  ],
+  "author": "Alberto Miranda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codealchemist/remoted/issues"
+  },
+  "homepage": "https://github.com/codealchemist/remoted#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "cli-cursor": "^2.1.0",
+    "lame": "^1.2.4",
+    "minimist": "^1.2.0",
+    "node-notifier": "^5.1.2",
+    "request": "^2.81.0",
+    "speaker": "^0.3.0",
+    "stream-player": "^0.3.0",
+    "udp-node": "^2.1.0",
+    "youtube-audio-stream": "0.0.48"
+  },
+  "devDependencies": {
+    "standard-focus": "^1.1.2"
+  }
+}
