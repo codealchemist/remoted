@@ -6,13 +6,8 @@ module.exports = class CommandRunner {
   constructor () {
     this.commands = {
       notify: true,
-      play: true,
-      stop: true,
       exit: true
     }
-
-    this.playing = null
-    this.playScript = path.join(__dirname, './commands/play.js')
   }
 
   run (commandString, callback) {
@@ -43,18 +38,6 @@ module.exports = class CommandRunner {
     }, (err, response) => {
       if (typeof callback === 'function') callback(err, 'Notification displayed.')
     })
-  }
-
-  play (url, callback) {
-    this.playing = cp.spawn('node', [this.playScript, url])
-    if (typeof callback === 'function') callback(null, 'Starting playback...')
-  }
-
-  stop (data, callback) {
-    if (this.playing) {
-      this.playing.kill()
-      if (typeof callback === 'function') callback(null, 'Playback stopped.')
-    }
   }
 
   exit (data, callback) {
