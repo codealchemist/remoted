@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "standard",
-    "test-focus": "standard-focus"
+    "test": "standard"
   },
   "bin": {
     "remoted": "src/index.js"
@@ -35,9 +34,9 @@
     "minimist": "^1.2.0",
     "node-notifier": "^5.1.2",
     "npm-check-updates": "^9.1.0",
-    "udp-node": "^2.1.0"
+    "standard": "^14.3.4",
+    "udp-node": "^2.1.0",
+    "yargs-parser": "^20.2.3"
   },
-  "devDependencies": {
-    "standard-focus": "^1.1.2"
-  }
+  "devDependencies": {}
 }
