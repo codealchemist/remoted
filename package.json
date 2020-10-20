@@ -1,6 +1,6 @@
 {
   "name": "remoted",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Remotely run commands on clients.",
   "main": "index.js",
   "scripts": {
