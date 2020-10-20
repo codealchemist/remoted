@@ -51,21 +51,9 @@ started first ;)
 On a host connected to a guest you can use any of the following
 commands:
 
-- `notify [message]`: Sends OS notifications using 
-[https://github.com/mikaelbr/node-notifier](https://github.com/mikaelbr/node-notifier)
-- `play [url]`: Supports mp3 and YouTube URLs (yeah, YouTube URLs!)
-- `stop`: Stops audio playback.
+- `notify [message]`: Sends OS notifications using
+  [https://github.com/mikaelbr/node-notifier](https://github.com/mikaelbr/node-notifier)
 - `exit`: Kills host and guest.
-
-Some cool tests of the audio playback feature:
-
-Play a [changelog.com](https://changelog.com) podcast:
-
-`play https://cdn.changelog.com/uploads/podcast/253/the-changelog-253.mp3`
-
-Play a song from YouTube:
-
-`play https://youtu.be/wTP2RUD_cL0`
 
 ## OS Commands
 
@@ -78,3 +66,6 @@ These are some of the most commonly used OS commands:
 
 You can remotely run any command that the OS supports.
 
+TODO:
+VLC
+ln -s /Applications/VLC.app/Contents/MacOS/VLC /usr/local/bin/vlc
