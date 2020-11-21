@@ -1,15 +1,17 @@
 const chalk = require('chalk')
 
 module.exports = () => {
-  const date = new Date().toLocaleDateString('en-US', {
-    day: 'numeric',
-    weekday: 'short',
-    month: 'short',
-    year: 'numeric',
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric'
-  }).split(' ')
+  const date = new Date()
+    .toLocaleDateString('en-US', {
+      day: 'numeric',
+      weekday: 'short',
+      month: 'short',
+      year: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      second: 'numeric'
+    })
+    .split(' ')
 
   // const dayName = date[0].replace(',', '')
   const monthName = date[1]
