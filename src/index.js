@@ -25,7 +25,7 @@ if (params.host) {
 }
 
 function hasInvalidParams (params) {
-  return (!params.host && !params['_'].length || params.host === true)
+  return (!params.host && !params['_'].length) || params.host === true
 }
 
 function showUsage () {

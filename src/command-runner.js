@@ -1,6 +1,5 @@
 const cp = require('child_process')
 const notifier = require('node-notifier')
-const path = require('path')
 
 module.exports = class CommandRunner {
   constructor () {
@@ -31,13 +30,18 @@ module.exports = class CommandRunner {
   }
 
   notify (message, callback) {
-    notifier.notify({
-      title: 'remoted',
-      sound: true,
-      message: message
-    }, (err, response) => {
-      if (typeof callback === 'function') callback(err, 'Notification displayed.')
-    })
+    notifier.notify(
+      {
+        title: 'remoted',
+        sound: true,
+        message: message
+      },
+      (err, response) => {
+        if (typeof callback === 'function') {
+          callback(err, 'Notification displayed.')
+        }
+      }
+    )
   }
 
   exit (data, callback) {
