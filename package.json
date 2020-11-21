@@ -1,6 +1,6 @@
 {
   "name": "remoted",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Remotely run commands on clients.",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,13 @@
     "type": "git",
     "url": "git+https://github.com/codealchemist/remoted.git"
   },
-  "keywords": ["remote", "commands", "client", "server", "udp"],
+  "keywords": [
+    "remote",
+    "commands",
+    "client",
+    "server",
+    "udp"
+  ],
   "author": "Alberto Miranda",
   "license": "MIT",
   "bugs": {
